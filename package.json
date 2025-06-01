@@ -1,0 +1,26 @@
+{
+  "name": "ihi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "tsx index.ts \"${@}\"",
+    "build": "tsc --outDir dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.11.0",
+  "devDependencies": {
+    "@types/node": "^22.15.29",
+    "prettier": "^3.5.3",
+    "tsx": "^4.19.4",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "@typescript-eslint/typescript-estree": "^8.33.0",
+    "cmd-ts": "^0.13.0",
+    "fastest-levenshtein": "^1.0.16"
+  }
+}
