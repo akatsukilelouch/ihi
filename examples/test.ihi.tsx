@@ -1,10 +1,14 @@
-declare function $on(event: string, callback: () => void): void;
+/// <reference path=".d.ts" />
+//
 
 export default function () {
   let $a = 32;
 
-  $on("data", (e) => {
+  $on("data", (e: number) => {
     $mutate($a);
+    $mutate($b);
+
+    $dispatchUp("fooo", 32, {});
   });
 
   return <foo></foo>;
